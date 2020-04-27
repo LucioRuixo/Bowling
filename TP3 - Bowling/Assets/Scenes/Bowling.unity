@@ -129,6 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3864414}
+  - component: {fileID: 3864415}
   m_Layer: 0
   m_Name: Pines
   m_TagString: Untagged
@@ -160,6 +161,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3864415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3864413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e31f0ffd94392234d8e325ef2b90da6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pinesStanding: 10
+  removeFallenPines: 0
 --- !u!4 &66477033 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
@@ -173,10 +188,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3864414}
     m_Modifications:
+    - target: {fileID: -5801900793883325531, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: pineManager
+      value: 
+      objectReference: {fileID: 3864415}
     - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_Name
       value: Pine (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -216,7 +241,7 @@ PrefabInstance:
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -242,10 +267,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3864414}
     m_Modifications:
+    - target: {fileID: -5801900793883325531, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: pineManager
+      value: 
+      objectReference: {fileID: 3864415}
     - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_Name
       value: Pine (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -285,7 +320,7 @@ PrefabInstance:
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -319,7 +354,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 150686, guid: 5175215abd476495a9f9738b2ab104ec, type: 3}
       propertyPath: m_Name
-      value: Floor
+      value: Lane
       objectReference: {fileID: 0}
     - target: {fileID: 487954, guid: 5175215abd476495a9f9738b2ab104ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -386,10 +421,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3864414}
     m_Modifications:
+    - target: {fileID: -5801900793883325531, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: pineManager
+      value: 
+      objectReference: {fileID: 3864415}
     - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_Name
       value: Pine (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -429,7 +474,7 @@ PrefabInstance:
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -455,10 +500,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3864414}
     m_Modifications:
+    - target: {fileID: -5801900793883325531, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: pineManager
+      value: 
+      objectReference: {fileID: 3864415}
     - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_Name
       value: Pine (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -498,7 +553,7 @@ PrefabInstance:
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -633,10 +688,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3864414}
     m_Modifications:
+    - target: {fileID: -5801900793883325531, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: pineManager
+      value: 
+      objectReference: {fileID: 3864415}
     - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_Name
       value: Pine (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -676,7 +741,7 @@ PrefabInstance:
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -762,6 +827,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8659639155118740341, guid: acb1434b65d546b4ea47ca90e15d1471,
+        type: 3}
+      propertyPath: lane
+      value: 
+      objectReference: {fileID: 861866557}
+    - target: {fileID: 8659639155118740341, guid: acb1434b65d546b4ea47ca90e15d1471,
+        type: 3}
+      propertyPath: pineManager
+      value: 
+      objectReference: {fileID: 3864415}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acb1434b65d546b4ea47ca90e15d1471, type: 3}
 --- !u!4 &846614713 stripped
@@ -770,6 +845,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1378294448}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &861866557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 150686, guid: 5175215abd476495a9f9738b2ab104ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 483823236}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &955571102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -777,10 +858,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3864414}
     m_Modifications:
+    - target: {fileID: -5801900793883325531, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: pineManager
+      value: 
+      objectReference: {fileID: 3864415}
     - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_Name
       value: Pine (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -820,7 +911,7 @@ PrefabInstance:
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -956,10 +1047,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3864414}
     m_Modifications:
+    - target: {fileID: -5801900793883325531, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: pineManager
+      value: 
+      objectReference: {fileID: 3864415}
     - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_Name
       value: Pine (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -999,7 +1100,7 @@ PrefabInstance:
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -1025,10 +1126,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3864414}
     m_Modifications:
+    - target: {fileID: -5801900793883325531, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: pineManager
+      value: 
+      objectReference: {fileID: 3864415}
     - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_Name
       value: Pine (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -1068,7 +1179,7 @@ PrefabInstance:
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -1112,6 +1223,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3864414}
     m_Modifications:
+    - target: {fileID: -5801900793883325531, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: pineManager
+      value: 
+      objectReference: {fileID: 3864415}
     - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_Name
@@ -1155,7 +1271,7 @@ PrefabInstance:
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -1181,10 +1297,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3864414}
     m_Modifications:
+    - target: {fileID: -5801900793883325531, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: pineManager
+      value: 
+      objectReference: {fileID: 3864415}
     - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_Name
       value: Pine (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391408470137949003, guid: 99adcdf46569aee448cfbab1ac28f4b5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
@@ -1224,7 +1350,7 @@ PrefabInstance:
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2391408470137655513, guid: 99adcdf46569aee448cfbab1ac28f4b5,
         type: 3}

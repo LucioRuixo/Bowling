@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 2391408470137655513}
   - component: {fileID: 2391408470136863601}
   - component: {fileID: 2391408470135421695}
-  - component: {fileID: 1806308311396927754}
   - component: {fileID: 1683393128145729618}
+  - component: {fileID: 8558354448789648835}
+  - component: {fileID: -5801900793883325531}
   m_Layer: 0
   m_Name: Pine
   m_TagString: Pine
@@ -80,19 +81,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &1806308311396927754
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2391408470137949003}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.6205993, y: 5.5012693, z: 1.6205992}
-  m_Center: {x: 0.00000014901161, y: 2.7506347, z: 0}
 --- !u!54 &1683393128145729618
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -109,3 +97,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &8558354448789648835
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2391408470137949003}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300002, guid: 6a14dc0db365944f182482aba11ad830, type: 3}
+--- !u!114 &-5801900793883325531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2391408470137949003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5a304a84a5b7c74da6977b1bd16bb2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
