@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 8558354448789648835}
   - component: {fileID: -5801900793883325531}
   m_Layer: 0
-  m_Name: Pine
-  m_TagString: Pine
+  m_Name: Pin
+  m_TagString: Pin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,3 +123,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a304a84a5b7c74da6977b1bd16bb2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxInclinationAngle: 0
+  gameManager: {fileID: 0}
