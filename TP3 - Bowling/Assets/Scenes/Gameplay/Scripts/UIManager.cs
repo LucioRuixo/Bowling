@@ -52,25 +52,7 @@ namespace Gameplay
             {
                 if (enableEndgameScreen)
                 {
-                    foreach (Transform child in GetComponentsInChildren(typeof(Transform), true))
-                    {
-                        switch (child.name)
-                        {
-                            case "Force":
-                            case "Pins Left":
-                            case "Shots Left":
-                                child.gameObject.SetActive(false);
-                                break;
-                            case "Endgame Background":
-                            case "Endgame Text":
-                            case "Return To Main Menu":
-                                child.gameObject.SetActive(true);
-                                break;
-                            default:
-                                break;
-                        }
-                    }
-
+                    SetEndgameScreenActive(true);
                     enableEndgameScreen = false;
                 }
 
@@ -87,6 +69,28 @@ namespace Gameplay
                         default:
                             break;
                     }
+                }
+            }
+        }
+
+        void SetEndgameScreenActive(bool value)
+        {
+            foreach (Transform child in GetComponentsInChildren(typeof(Transform), true))
+            {
+                switch (child.name)
+                {
+                    case "Force":
+                    case "Pins Left":
+                    case "Shots Left":
+                        child.gameObject.SetActive(!value);
+                        break;
+                    case "Endgame Background":
+                    case "Endgame Text":
+                    case "Return To Main Menu":
+                        child.gameObject.SetActive(value);
+                        break;
+                    default:
+                        break;
                 }
             }
         }
